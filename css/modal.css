@@ -1,0 +1,255 @@
+/* #####################################################################
+ #
+ #   Project       : Modal Login with jQuery Effects
+ #   Author        : Rodrigo Amarante (rodrigockamarante)
+ #   Version       : 1.0
+ #   Created       : 07/28/2015
+ #   Last Change   : 08/02/2015
+ #
+ ##################################################################### */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Rajdhani);
+@import url(http://fonts.googleapis.com/css?family=Baloo);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Hind);
+@import url(https://fonts.googleapis.com/css?family=Baloo+Bhaina);
+* {}
+
+#login-modal .modal-dialog {
+  width: 450px;
+}
+
+#login-modal input[type=text], input[type=password] {
+  margin-top: 10px;
+}
+
+#div-login-msg, #div-lost-msg, #div-register-msg {
+  border: 1px solid #dadfe1;
+  height: 30px;
+  line-height: 28px;
+  transition: all ease-in-out 500ms;
+}
+
+#div-login-msg.success, #div-lost-msg.success, #div-register-msg.success {
+  border: 1px solid #68c3a3;
+  background-color: #c8f7c5;
+}
+
+#div-login-msg.error, #div-lost-msg.error, #div-register-msg.error {
+  border: 1px solid #eb575b;
+  background-color: #ffcad1;
+}
+
+#icon-login-msg, #icon-lost-msg, #icon-register-msg {
+  width: 30px;
+  float: left;
+  line-height: 28px;
+  text-align: center;
+  background-color: #dadfe1;
+  margin-right: 5px;
+  transition: all ease-in-out 500ms;
+}
+
+#icon-login-msg.success, #icon-lost-msg.success, #icon-register-msg.success {
+  background-color: #68c3a3 !important;
+}
+
+#icon-login-msg.error, #icon-lost-msg.error, #icon-register-msg.error {
+  background-color: #eb575b !important;
+}
+
+#img_logo {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+
+/* #########################################
+ #    override the bootstrap configs     #
+ ######################################### */
+
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .8;
+}
+
+.modal-content {
+  background-color: #FFFFFF;
+  border-radius: 0px;
+  outline: 0;
+}
+
+.modal-header {
+  background-color: #D24D57;
+  min-height: 16.43px;
+  padding: 30px;
+  border-bottom: 0px;
+}
+
+.modal-body {
+  font-family: 'Hind', sans-serif;
+  position: relative;
+  padding: 40px 15px 5px 15px;
+}
+
+#login-form .modal-body>div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  padding: 15px 15px 40px 15px;
+  text-align: left;
+  border-top: 0px;
+}
+
+.checkbox {
+  margin-bottom: 0px;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+  outline: none;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+  border-radius: 0px;
+}
+
+.btn-link {
+  padding: 5px 10px 0px 0px;
+  color: #95a5a6;
+}
+
+.btn-link:hover, .btn-link:focus {
+  text-decoration: none;
+}
+
+.glyphicon {
+  top: 0px;
+}
+
+.form-control {
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 2px solid #424242;
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075), 0 0 0px rgba(102, 175, 233, .6);
+}
+
+.form-control:focus {
+  border-bottom: 2px solid #0C92D1;
+  outline: 0;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075), 0 0 0px rgba(102, 175, 233, .6);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075), 0 0 0px rgba(102, 175, 233, .6);
+}
+
+.mory_name {
+  padding-top: 20px;
+  color: #FFF;
+  font-family: 'Baloo', cursive;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 26.4px;
+}
+
+.btn_fb_login_color, .btn_fb_login_color:hover {
+  background-color: #4A74CD;
+  color: white;
+}
+
+.btn_login_color, .btn_login_color:hover {
+  color: #4A74CD;
+  background-color: transparent;
+  border: 2px solid #4A74CD;
+}
+
+.btn_register, .btn_register:hover {
+  color: white;
+  background-color: #D24D57;
+}
+
+.btn_lost_pass, .btn_lost_pass:hover {
+  font-size: 70%;
+  color: #D24D57;
+}
+
+.btn_lost_pass_send, .btn_lost_pass_send:hover {
+  border: 2px solid #43A047;
+  background-color: transparent;
+  color: #43A047;
+  margin-bottom: 10px;
+}
+
+.modal-footer>div>div>button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+
+.toggle_checkbox, .modal-footer>div>button {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 1.5px;
+}
+
+.toggle_checkbox .material-switch>input[type="checkbox"] {
+  display: none;
+}
+
+.toggle_checkbox .material-switch>label {
+  cursor: pointer;
+  height: 0px;
+  position: relative;
+  width: 40px;
+  margin-right: 10px;
+  margin-bottom: 0
+}
+
+.toggle_checkbox .material-switch>label::before {
+  background: rgb(0, 0, 0);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  content: '';
+  height: 16px;
+  margin-top: -8px;
+  position: absolute;
+  opacity: 0.3;
+  transition: all 0.4s ease-in-out;
+  width: 40px;
+}
+
+.toggle_checkbox .material-switch>label::after {
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  content: '';
+  height: 24px;
+  left: -4px;
+  margin-top: -8px;
+  position: absolute;
+  top: -4px;
+  transition: all 0.3s ease-in-out;
+  width: 24px;
+}
+
+.toggle_checkbox .material-switch>input[type="checkbox"]:checked+label::before {
+  background: inherit;
+  opacity: 0.5;
+}
+
+.toggle_checkbox .material-switch>input[type="checkbox"]:checked+label::after {
+  background: inherit;
+  left: 20px;
+}

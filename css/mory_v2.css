@@ -1,0 +1,279 @@
+body {
+  margin-top: 80px;
+}
+
+.ust_nav .navbar-brand img {
+  width: 75px;
+  margin-top: -10px;
+}
+
+.ust_nav .navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  box-shadow: 0px 2px 6px rgba(194, 194, 194, 0.5); //border-bottom: 2px solid  rgba(194,194,194,0.5);
+}
+
+.ust_nav .navbar-collapse {
+  text-align: center;
+}
+
+.ust_nav .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.ust_nav .navbar-nav .mory_name {
+  color: #666666;
+  font-family: 'Baloo', cursive;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  line-height: 26.4px;
+}
+
+.ust_nav .navbar-nav .btn-circle, .ust_nav .navbar-nav .btn-circle:hover {
+  border: 2px solid #0C92D1;
+  color: #0C92D1;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.428571429;
+}
+
+.ust_nav .navbar-nav .btn-default:hover, .ust_nav .navbar-nav .btn-default:focus, .ust_nav .navbar-nav .btn-default:active {
+  background-color: transparent;
+}
+
+.alt_nav .navbar-default {
+  background-color: #D24D57;
+}
+
+.alt_nav .navbar .nav>li {
+  margin-left: 10px;
+}
+
+.alt_nav .navbar .nav>li:hover {
+  border-bottom: 1px solid white;
+}
+
+.alt_nav .navbar .nav>li>a {
+  padding: 3px;
+  font-size: 20px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.alt_nav .navbar .nav>li>a>span {
+  font-size: 16px;
+}
+
+.alt_nav .navbar {
+  padding: 5px;
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.icerik_arkaplan {
+  padding: 0px;
+  padding-top: 30px;
+  box-shadow: 0 9px 0px 0px transparent, 0 -9px 0px 0px white, 8px 0 15px -4px rgba(194, 194, 194, 0.5), -8px 0 15px -4px rgba(194, 194, 194, 0.5);
+}
+
+.icerik .btn-circle {
+  border: 2px solid gray;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 35px;
+}
+
+.icerik .btn_oda_katil {
+  color: #449D44;
+  border: 2px solid #449D44;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+
+/*
+.icerik {
+  padding-left: 15px;
+  padding-right: 15px;
+}*/
+
+.icerik img {
+  height: 100%;
+  width: 100%;
+}
+
+.icerik .baslica_icerik {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+}
+
+.icerik .baslica_icerik:hover .caption {
+  opacity: 1;
+  transform: translateY(-150px);
+  -webkit-transform: translateY(-150px);
+  -moz-transform: translateY(-150px);
+  -ms-transform: translateY(-150px);
+  -o-transform: translateY(-150px);
+}
+
+.icerik .baslica_icerik img {
+  margin-top: 20px;
+  z-index: 4;
+}
+
+.icerik .baslica_icerik .caption {
+  position: absolute;
+  top: 200px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.icerik .baslica_icerik .blur {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 250px;
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+}
+
+.icerik .baslica_icerik .caption-text {
+  font-family: 'Montserrat', sans-serif;
+  z-index: 5;
+  color: #fff;
+  position: absolute;
+  height: 300px;
+  text-align: center;
+  top: -20px;
+  width: 100%;
+}
+
+.icerik .baslica_icerik .progress-etiket {
+  color: #fff;
+  position: absolute;
+  top: 5%;
+  left: 75%;
+}
+
+.icerik .baslica_icerik .progress-etiket .progress {
+  width: 100px;
+}
+
+.icerik .baslica_icerik .progress-etiket .progress>div {
+  font-size: 10px;
+}
+
+.etiket {
+  float: left;
+  font-family: 'Hind', sans-serif;
+  text-transform: uppercase;
+  border: 1.5px solid #D24D57;
+  border-radius: 5px;
+}
+
+.icerik .baslica_icerik .caption-text .etiket, .icerik .icerik_odalar .thumbnail .caption .etiket {
+  margin-left: 10px;
+}
+
+.icerik .baslica_icerik .caption-text .etiket {
+  padding-top: 5px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 13px;
+}
+
+.icerik .icerik_odalar .thumbnail .caption .etiket {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 10px;
+}
+
+
+/*.icerik .progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}*/
+
+.icerik .icerik_odalar .middle {
+  transition: .2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.icerik .icerik_odalar .thumbnail:hover .image {
+  opacity: 0.3;
+}
+
+.icerik .icerik_odalar .thumbnail:hover .middle {
+  opacity: 0.7;
+}
+
+.icerik .icerik_odalar .img_circle {
+  border-radius: 250px;
+}
+
+.icerik .icerik_odalar .thumbnail {
+  width: auto;
+  margin-top: 40px;
+  padding: 0px;
+  border: 2px solid rgba(194, 194, 194, 0.5);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.icerik .icerik_odalar .thumbnail .caption {
+  margin-bottom: -20px;
+  margin-left: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.icerik .icerik_odalar .thumbnail .progress>div {
+  font-size: 10px;
+}
+
+.icerik .icerik_odalar .populer_icerikler>div {
+  padding-top: 20px;
+  border-left: 2px solid rgba(194, 194, 194, 0.5) !important;
+}
+
+.icerik .icerik_odalar .populer_icerikler .populer_icerik_baslik img {
+  margin: 0px;
+  padding: 0px;
+  height: 40px;
+  width: auto;
+}
+
+.icerik .icerik_odalar .populer_icerikler .populer_icerik_baslik {
+  margin-left: 20px;
+  font-size: 23px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 2px;
+}

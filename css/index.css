@@ -1,0 +1,114 @@
+  
+
+body
+{font-family: Lato,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  
+  position: relative;
+  background: #F2F2F2;
+  
+
+}
+
+section .thumbnail
+{
+border-bottom:5px solid #2181FF;
+}
+
+
+
+.ust_navbar .navbar
+{
+padding-left:10px;
+padding-right:10px;
+
+background-color:#212121;
+border-style: none;
+border-radius:0px;
+border-bottom:2px solid #2181FF;
+}
+
+.ust_navbar .nav li:hover
+{
+background-color:rgb(33,129,255);
+-webkit-transition:all 0.3s ease;
+}
+
+.ust_navbar .navbar-brand img 
+{
+margin-top:-5px;
+height:150%;
+width: auto;
+}
+
+
+.ust_navbar .nav.navbar-nav li a {
+   color: #2181FF;
+ }
+
+.ust_navbar .nav.navbar-nav a:hover {
+ color: #000;
+}
+
+.thumbnail img
+{
+padding-bottom:20px;
+//background-color:black;
+padding:50px;
+margin-bottom:20px;
+
+
+}
+.thumbnail
+{
+border:3px solid rgba(200, 200,200, 0.35);
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+
+background-color:rgb(255,255,255);
+}
+
+body section
+{
+padding-left:15em !important;
+padding-right:15em !important;
+}
+.btn-circle {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 25px;
+}
+.btn-circle.btn-lg {
+  width: 60px;
+  height: 60px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+.btn-circle.btn-xl {
+  width: 75px;
+  height: 74px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 45px;
+}
+.dropdown-menu {
+	border-radius:35px;
+	padding:5px;
+	background-color:rgba(230,230,230,0.6);
+    min-width: 0px !important;
+    width: auto;
+    height: auto !important;
+}
+
+
+
+
+
+
